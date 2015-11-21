@@ -1,0 +1,21 @@
+
+这么久了，经过了 git 的不断使用，也知道了具体方法。
+
+假设以 a 仓库作为最终的使用仓库， b为发布仓库。分支都为 dev
+
+现在我自己回复自己吧：
+
+第一步，增加远程仓库
+git remote add origin1 git.a
+git remote add origin2 git.b
+
+第二步，本地确保没 change 的东西，拉去远程仓库地址，然后进行 rebase 。
+git fetch origin1
+git rebase -i origin1/dev
+
+如果有冲突，解决完。
+
+git push -f origin1 dev
+git push -f origin2 dev
+
+done.
