@@ -1,3 +1,13 @@
+============================= test session starts ==============================
+platform linux2 -- Python 2.7.6, pytest-2.8.2, py-1.4.30, pluggy-0.3.1
+rootdir: /srv/hackathon/tests, inifile: 
+collected 16 items
+
+../hackathon/tests/test_carts.py .
+../hackathon/tests/test_errors.py ...
+../hackathon/tests/test_foods.py .
+../hackathon/tests/test_login.py ...
+../hackathon/tests/test_orders.py .F.F..FF
 =================================== FAILURES ===================================
 ____________________________ test_add_food_success _____________________________
 ../hackathon/tests/test_orders.py:43: in test_add_food_success

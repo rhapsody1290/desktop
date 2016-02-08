@@ -1,0 +1,8 @@
+# common
+*.class 
+.classpath
+target
+.project
+.settings
+bin
+*.pyc

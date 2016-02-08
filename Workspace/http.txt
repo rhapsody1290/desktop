@@ -1,0 +1,101 @@
+普通用户cyqtciu e290e3e0f121432a829d28608bda1f51
+POST http://127.0.0.1:8080/login HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Length: 40
+Accept-Encoding: gzip, deflate
+Accept: */*
+User-Agent: python-requests/2.8.1
+Connection: keep-alive
+Content-type: application/json
+
+{"username": "cyqtciu", "password": "e290e3e0f121432a829d28608bda1f51"}
+登录
+POST http://127.0.0.1:8080/login HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Length: 40
+Accept-Encoding: gzip, deflate
+Accept: */*
+User-Agent: python-requests/2.8.1
+Connection: keep-alive
+Content-type: application/json
+
+{"username": "root", "password": "toor"}
+
+
+回复
+HTTP/1.0 200 OK
+Content-Type: application/json;charset=utf-8
+
+{"user_id": 1,"username": "root","access_token": "5622946231324959b0ae3e751331d013"}
+
+创建购物车
+POST http://127.0.0.1:8080/carts HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Length: 0
+Accept-Encoding: gzip, deflate
+Access-Token: 5622946231324959b0ae3e751331d013
+Accept: */*
+User-Agent: python-requests/2.8.1
+Connection: keep-alive
+Content-type: application/json
+
+
+回复
+HTTP/1.0 200 OK
+Content-Type: application/json;charset=utf-8
+
+{"cart_id": "1"}
+
+
+
+
+增添食物
+PATCH http://127.0.0.1:8080/carts/1 HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Length: 27
+Accept-Encoding: gzip, deflate
+Access-Token: 5622946231324959b0ae3e751331d013
+Accept: */*
+User-Agent: python-requests/2.8.1
+Connection: keep-alive
+Content-type: application/json
+
+{"count": 1, "food_id": 1}
+
+
+下单
+POST http://127.0.0.1:8080/orders HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Length: 27
+Accept-Encoding: gzip, deflate
+Access-Token: 5622946231324959b0ae3e751331d013
+Accept: */*
+User-Agent: python-requests/2.8.1
+Connection: keep-alive
+Content-type: application/json
+
+{
+    "cart_id": "1"
+}
+
+查询订单
+GET http://127.0.0.1:8080/orders HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Length: 27
+Accept-Encoding: gzip, deflate
+Access-Token: 5622946231324959b0ae3e751331d013
+Accept: */*
+User-Agent: python-requests/2.8.1
+Connection: keep-alive
+Content-type: application/json
+
+
+GET http://127.0.0.1:8080/admin/orders HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Length: 27
+Accept-Encoding: gzip, deflate
+Access-Token: 5622946231324959b0ae3e751331d013
+Accept: */*
+User-Agent: python-requests/2.8.1
+Connection: keep-alive
+Content-type: application/json

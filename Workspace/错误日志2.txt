@@ -1,0 +1,52 @@
+============================= test session starts ==============================
+platform linux2 -- Python 2.7.6, pytest-2.8.2, py-1.4.30, pluggy-0.3.1
+rootdir: /srv/hackathon/tests, inifile: 
+collected 16 items
+
+../hackathon/tests/test_carts.py .
+../hackathon/tests/test_errors.py ...
+../hackathon/tests/test_foods.py F
+../hackathon/tests/test_login.py ...
+../hackathon/tests/test_orders.py FF.F..FF
+
+=================================== FAILURES ===================================
+__________________________________ test_foods __________________________________
+../hackathon/tests/test_foods.py:7: in test_foods
+    res = requests.get(url + "/foods", headers={"Access-Token": token})
+/usr/lib/python2.7/dist-packages/requests/api.py:55: in get
+    return request('get', url, **kwargs)
+/usr/lib/python2.7/dist-packages/requests/api.py:44: in request
+    return session.request(method=method, url=url, **kwargs)
+/usr/lib/python2.7/dist-packages/requests/sessions.py:455: in request
+    resp = self.send(prep, **send_kwargs)
+/usr/lib/python2.7/dist-packages/requests/sessions.py:558: in send
+    r = adapter.send(request, **kwargs)
+/usr/lib/python2.7/dist-packages/requests/adapters.py:378: in send
+    raise ConnectionError(e)
+E   ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8080): Max retries exceeded with url: /foods (Caused by <class 'httplib.BadStatusLine'>: '')
+_______________________________ test_get_orders ________________________________
+../hackathon/tests/test_orders.py:29: in test_get_orders
+    res = jget(url + "/orders", token)
+../hackathon/tests/conftest.py:112: in <lambda>
+    url, headers={"Access-Token": token, "Content-type": "application/json"})
+/usr/lib/python2.7/dist-packages/requests/api.py:55: in get
+    return request('get', url, **kwargs)
+/usr/lib/python2.7/dist-packages/requests/api.py:44: in request
+    return session.request(method=method, url=url, **kwargs)
+/usr/lib/python2.7/dist-packages/requests/sessions.py:455: in request
+    resp = self.send(prep, **send_kwargs)
+/usr/lib/python2.7/dist-packages/requests/sessions.py:558: in send
+    r = adapter.send(request, **kwargs)
+/usr/lib/python2.7/dist-packages/requests/adapters.py:378: in send
+    raise ConnectionError(e)
+E   ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8080): Max retries exceeded with url: /orders (Caused by <class 'httplib.BadStatusLine'>: '')
+____________________________ test_add_food_success _____________________________
+../hackathon/tests/test_orders.py:43: in test_add_food_success
+    assert res.status_code == 204
+E   assert 404 == 204
+E    +  where 404 = <Response [404]>.status_code
+____________________________ test_del_food_success _____________________________
+../hackathon/tests/test_orders.py:58: in test_del_food_success
+    assert res.status_code == 204
+E   assert 404 == 204
+E    +  where 404 = <Response [404]>.status_code

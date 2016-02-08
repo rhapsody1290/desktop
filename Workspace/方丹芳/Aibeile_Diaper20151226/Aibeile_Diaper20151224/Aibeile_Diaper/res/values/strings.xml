@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">验嘘嘘</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_scan">ScanActivity</string>
+    <string name="title_activity_information">InformationActivity</string>
+    <string name="title_activity_personal">PersonalActivity</string>
+    <string name="title_activity_chart_item">Chart_itemActivity</string>
+    <string name="title_activity_detail_information">DetailInformationActivity</string>
+    <string name="title_activity_main_page">MainPageActivity</string>
+
+    <string name="title_activity_hotinfor">HotInforActivity</string>
+    <string name="title_activity_hournews">HourNewsActivity</string>
+    <string name="title_activity_nearfocus">NearFocusActivity</string>    
+    <string name="title_activity_detailnews">DetailNewsActivity</string>
+    <string name="title_activity_mainpageinfo">MainPageInfoActivity</string>
+    <string name="_drawable_main_info_grey">\@drawable/main_info_grey</string>      
+</resources>

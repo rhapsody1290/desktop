@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn">
+	<Appenders>
+		<RollingRandomAccessFile name="FILE"
+			fileName="logs/server.log" append="true" filePattern="logs/server.log.%d{yyyyMMdd}">
+			<PatternLayout>
+				<Pattern>%d %level [%c] %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+			</Policies>
+		</RollingRandomAccessFile>
+		<Async name="Async">
+			<AppenderRef ref="FILE" />
+		</Async>
+	</Appenders>
+	<Loggers>
+		<root level="info">
+			<appender-ref ref="Async" />
+		</root>
+		<logger name="me.ele.draenor.route" level="warn">
+			<appender-ref ref="Async" />
+		</logger>
+	</Loggers>
+</Configuration>

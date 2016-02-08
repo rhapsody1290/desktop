@@ -1,0 +1,59 @@
+{
+    "provisioners": [
+        {
+            "type": "file",
+            "source": "files/gendata",
+            "destination": "/tmp/gendata"
+        },
+        {
+            "type": "file",
+            "source": "files/hackathon-appreload",
+            "destination": "/tmp/hackathon-appreload"
+        },
+        {
+            "type": "file",
+            "source": "files/hackathon-appreload.conf",
+            "destination": "/tmp/hackathon-appreload.conf"
+        },
+        {
+            "type": "file",
+            "source": "files/hackathon-app.conf",
+            "destination": "/tmp/hackathon-app.conf"
+        },
+        {
+            "type": "file",
+            "source": "files/launcher",
+            "destination": "/tmp/launcher"
+        },
+        {
+            "type": "shell",
+            "execute_command": "echo 'vagrant' | {{.Vars}} sudo -S -E bash '{{.Path}}'",
+            "scripts": [
+                "scripts/base.sh",
+                "scripts/tune.sh",
+                "scripts/python.sh"
+            ]
+        }
+    ],
+    "builders": [
+        {
+            "type": "virtualbox-ovf",
+            "source_path": "{{user `ubuntu_trusty64_ovf`}}",
+            "ssh_username": "vagrant",
+            "ssh_password": "vagrant",
+            "headless": true,
+            "shutdown_command": "echo 'packer' | sudo -S shutdown -P now",
+            "vboxmanage": [
+                ["modifyvm", "{{.Name}}", "--memory", "1024"],
+                ["modifyvm", "{{.Name}}", "--cpus", "2"]
+            ]
+        }
+    ],
+    "post-processors": [
+        {
+            "type": "vagrant",
+            "compression_level": 9,
+            "output": "hackathon-py.vbox"
+        }
+    ]
+}

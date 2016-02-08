@@ -1,0 +1,55 @@
+#!/usr/bin/python
+
+import subprocess
+import logging
+
+import os.path
+
+import yaml
+
+LOG_FILE = "/vagrant/app.log"
+CONFIG_FILE = "/vagrant/app.yml"
+LANGS = {"pypy", "py2", "py3", "java", "go"}
+
+logging.basicConfig(filename=LOG_FILE, level=logging.INFO)
+logger = logging.getLogger("hackathon.launcher")
+
+
+def main():
+
+    logger.info("app launching...")
+
+    if not os.path.exists(CONFIG_FILE):
+        logger.error("app.yml not exists!")
+        return
+
+    with open("/vagrant/app.yml", "r") as f:
+        config = yaml.load(f)
+
+    if config is None:
+        logger.error("app.yml empty!")
+        return
+
+    lang = config.get("language")
+
+    if lang is None:
+        logger.error("config should contain language section!")
+        return
+    elif lang not in LANGS:
+        logger.error("only py2 / py3 / pypy / java / go supported!")
+        return
+
+    env = dict(os.environ)
+
+    # source virtualenv for python
+    if lang in ["pypy", "py2", "py3"]:
+        logging.info("activated %s virtualenv" % lang)
+        env["VIRTUAL_ENV"] = "/srv/virtualenvs/%s" % lang
+        env["PATH"] = "%s/bin:%s" % (env["VIRTUAL_ENV"], env["PATH"])
+
+    for script in config.get("script", []):
+        logger.info("execute script: %s" % script)
+        subprocess.call(script, shell=True, executable="/bin/bash", env=env)
+
+if __name__ == "__main__":
+    main()

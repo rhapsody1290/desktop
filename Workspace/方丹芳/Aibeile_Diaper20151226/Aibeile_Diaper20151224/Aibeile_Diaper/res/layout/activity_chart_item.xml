@@ -1,0 +1,142 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="#ffffff">
+
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dp" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:text="单项数据"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@id/header_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/back" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26dp"
+            android:layout_toRightOf="@id/header_back_button"
+            android:background="@drawable/company_logo" />
+
+    </RelativeLayout>
+      <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp" >
+
+          <TextView
+              android:id="@id/chart_item_zhibiao"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp"
+              android:gravity="center"
+              android:text="单项数据"
+              android:textColor="@color/black"
+              android:textSize="20sp" />
+           <Spinner
+            android:id="@id/chart_item_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp"
+      
+      /> 
+      </RelativeLayout>
+      <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line" 
+        />
+        <com.aibeile_diaper.mm.view.Mychart
+        android:id="@id/chart_item_chartview"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:paddingTop="30dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        />
+        <TableLayout 
+    	android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical"
+		android:paddingTop="3dip"
+		>
+	  <TableRow>
+		<TextView
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="30dip"
+		    android:layout_weight="1"
+		    android:text=" 正常 "
+		    android:gravity="center"
+		    android:drawableRight="@drawable/green"
+		    android:textSize="15sp" />
+		<TextView
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="10dip"
+		    android:layout_weight="1"
+		    android:text=" 异常  "
+		    android:gravity="center"
+		    android:drawableRight="@drawable/yellow"
+		    android:textSize="15sp" />
+
+		<TextView
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="10dip"
+		    android:layout_marginRight="30dip"
+		    android:layout_weight="1"  
+		    android:text=" 重症  "
+		    android:gravity="center"
+		    android:drawableRight="@drawable/red"
+		    android:textSize="15sp" />
+		
+		</TableRow>
+	</TableLayout>
+	<ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dip"
+        android:src="@drawable/line" 
+     /> 
+     <ImageView
+        android:id="@id/chart_item_miaoshu" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dip"
+        android:layout_gravity="center"
+        android:src="@drawable/line" 
+        
+     /> 
+    
+  
+</LinearLayout>
+ </ScrollView>

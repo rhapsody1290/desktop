@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dp" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:text="扫描结果"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@id/header_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/back" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26dp"
+            android:layout_toRightOf="@id/header_back_button"
+            android:background="@drawable/company_logo" />
+
+    </RelativeLayout>
+     
+      <RelativeLayout  
+           android:layout_width="match_parent"
+           android:layout_height="50dip"
+           android:layout_gravity="center">
+           <TextView 
+               android:text="用户id"
+               style = "@style/personal_tv"
+               android:layout_marginLeft="15dip"
+               android:layout_centerVertical="true"
+               />
+            <Spinner
+           android:id="@+id/spinner_date"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:layout_gravity="center" 
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip"    
+            />   
+        </RelativeLayout>
+        <LinearLayout 
+          style = "@style/LineHorizontalBar">
+        </LinearLayout>   
+    
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" 
+        android:background="@color/white" 
+        android:textColor="@color/black" 
+        android:gravity="center"
+        android:textSize="20sp"/>
+     <LinearLayout 
+          style = "@style/LineHorizontalBar">
+        </LinearLayout>  
+      
+     <TableLayout 
+    	android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical"
+		android:paddingTop="3dip"
+		android:paddingBottom="3dip"
+		>
+	  <TableRow>
+		<TextView
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="30dip"
+		    android:layout_weight="1"
+		    android:text=" 正常 "
+		    android:gravity="center"
+		    android:drawableRight="@drawable/green"
+		    android:textSize="15sp" />
+		<TextView
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="10dip"
+		    android:layout_weight="1"
+		    android:text=" 异常  "
+		    android:gravity="center"
+		    android:drawableRight="@drawable/yellow"
+		    android:textSize="15sp" />
+
+		<TextView
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="10dip"
+		    android:layout_marginRight="30dip"
+		    android:layout_weight="1"  
+		    android:text=" 重症  "
+		    android:gravity="center"
+		    android:drawableRight="@drawable/red"
+		    android:textSize="15sp" />
+		
+		</TableRow>
+	</TableLayout>
+	  <LinearLayout 
+          style = "@style/LineHorizontalBar">
+        </LinearLayout>  
+	
+     <TableLayout 
+    	android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical"
+		 android:paddingTop="3dip"
+		android:stretchColumns="3"	
+		>
+	    <TableRow>
+		<TextView
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="检测项" 
+		    android:textSize="15sp"
+		    android:padding="10px"
+		    android:layout_marginLeft="10dip"
+		    android:layout_weight="1"
+		    android:background="@color/light_grey"  
+		    />
+
+		<TextView
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="5dip"
+		    android:layout_weight="1.5"
+		    android:background="@color/light_grey"
+		    android:padding="10px"
+		    android:text=" 检测值  "
+		    android:drawableRight="@drawable/wenhao"
+		    android:textSize="15sp" />
+		<TextView
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="正常值" 
+		    android:textSize="15sp"
+		    android:padding="10px"
+		    android:layout_marginLeft="5dip"
+		      android:layout_weight="1"
+		     android:background="@color/light_grey"  />
+		<TextView 
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent" 
+			android:text="风险疾病"
+		    android:textSize="15sp"
+            android:padding="10px"
+            android:layout_marginLeft="5dip"
+             android:layout_marginRight="10dip"
+               android:layout_weight="1"
+             android:background="@color/light_grey"  />
+		</TableRow>
+	   <TableRow
+	       android:paddingTop="5dip">
+		<TextView
+		    android:id="@id/tv00"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="检测项" 
+		    android:textSize="15sp"
+		    android:padding="10px"
+		    android:layout_marginLeft="10dip"
+		    android:layout_weight="1"
+		    android:background="@color/light_grey"  
+		    />
+
+		<TextView
+		    android:id="@id/tv01"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="5dip"
+		    android:layout_weight="1.5"
+		    android:background="@color/light_grey"
+		    android:padding="10px"
+		    android:text=" 检测值  "
+		    android:drawableRight="@drawable/wenhao"
+		    android:textSize="15sp" />
+		<TextView
+		    android:id="@id/tv02"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="正常值" 
+		    android:textSize="15sp"
+		    android:padding="10px"
+		    android:layout_marginLeft="5dip"
+		      android:layout_weight="1"
+		     android:background="@color/light_grey"  />
+		<TextView 
+		    android:id="@id/tv03"
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent" 
+			android:text="风险疾病"
+		    android:textSize="15sp"
+            android:padding="10px"
+            android:layout_marginLeft="5dip"
+             android:layout_marginRight="10dip"
+               android:layout_weight="1"
+             android:background="@color/light_grey"  />
+		</TableRow>
+		  <TableRow
+	       android:paddingTop="5dip">
+		<TextView
+		    android:id="@id/tv10"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="检测项" 
+		    android:textSize="15sp"
+		    android:padding="10px"
+		    android:layout_marginLeft="10dip"
+		    android:layout_weight="1"
+		    android:background="@color/light_grey"  
+		    />
+
+		<TextView
+		     android:id="@id/tv11"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="5dip"
+		    android:layout_weight="1"
+		    android:background="@color/light_grey"
+		    android:padding="10px"
+		    android:text=" 检测值  "
+		    android:drawableRight="@drawable/wenhao"
+		    android:textSize="15sp" />
+		<TextView
+		     android:id="@id/tv12"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="正常值" 
+		    android:textSize="15sp"
+		    android:padding="10px"
+		    android:layout_marginLeft="5dip"
+		      android:layout_weight="1"
+		     android:background="@color/light_grey"  />
+		<TextView 
+		     android:id="@id/tv13"
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent" 
+			android:text="风险疾病"
+		    android:textSize="15sp"
+            android:padding="10px"
+            android:layout_marginLeft="5dip"
+             android:layout_marginRight="10dip"
+               android:layout_weight="1"
+             android:background="@color/light_grey"  />
+		</TableRow>
+		 <TableRow
+	       android:paddingTop="5dip">
+		<TextView
+		    android:id="@id/tv20"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="检测项" 
+		    android:textSize="15sp"
+		    android:padding="10px"
+		    android:layout_marginLeft="10dip"
+		    android:layout_weight="1"
+		    android:background="@color/light_grey"  
+		    />
+
+		<TextView
+		    android:id="@id/tv21"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="5dip"
+		    android:layout_weight="1.5"
+		    android:background="@color/light_grey"
+		    android:padding="10px"
+		    android:text=" 检测值  "
+		    android:drawableRight="@drawable/wenhao"
+		    android:textSize="15sp" />
+		<TextView
+		    android:id="@id/tv22"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="正常值" 
+		    android:textSize="15sp"
+		    android:padding="10px"
+		    android:layout_marginLeft="5dip"
+		      android:layout_weight="1"
+		     android:background="@color/light_grey"  />
+		<TextView 
+		    android:id="@id/tv23"
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent" 
+			android:text="风险疾病"
+		    android:textSize="15sp"
+            android:padding="10px"
+            android:layout_marginLeft="5dip"
+             android:layout_marginRight="10dip"
+               android:layout_weight="1"
+             android:background="@color/light_grey"  />
+		</TableRow>
+		 <TableRow
+	       android:paddingTop="5dip">
+		<TextView
+		    android:id="@id/tv30"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="检测项" 
+		    android:textSize="15sp"
+		    android:padding="10px"
+		    android:layout_marginLeft="10dip"
+		    android:layout_weight="1"
+		    android:background="@color/light_grey"  
+		    />
+
+		<TextView
+		    android:id="@id/tv31"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="5dip"
+		    android:layout_weight="1.5"
+		    android:background="@color/light_grey"
+		    android:padding="10px"
+		    android:text=" 检测值  "
+		    android:drawableRight="@drawable/wenhao"
+		    android:textSize="15sp" />
+		<TextView
+		    android:id="@id/tv32"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="正常值" 
+		    android:textSize="15sp"
+		    android:padding="10px"
+		    android:layout_marginLeft="5dip"
+		      android:layout_weight="1"
+		     android:background="@color/light_grey"  />
+		<TextView 
+		    android:id="@id/tv33"
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent" 
+			android:text="风险疾病"
+		    android:textSize="15sp"
+            android:padding="10px"
+            android:layout_marginLeft="5dip"
+             android:layout_marginRight="10dip"
+               android:layout_weight="1"
+             android:background="@color/light_grey"  />
+		</TableRow>
+		 <TableRow
+	       android:paddingTop="5dip">
+		<TextView
+		    android:id="@id/tv40"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="检测项" 
+		    android:textSize="15sp"
+		    android:padding="10px"
+		    android:layout_marginLeft="10dip"
+		    android:layout_weight="1"
+		    android:background="@color/light_grey"  
+		    />
+
+		<TextView
+		    android:id="@id/tv41"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="5dip"
+		    android:layout_weight="1.5"
+		    android:background="@color/light_grey"
+		    android:padding="10px"
+		    android:text=" 检测值  "
+		    android:drawableRight="@drawable/wenhao"
+		    android:textSize="15sp" />
+		<TextView
+		    android:id="@id/tv42"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="正常值" 
+		    android:textSize="15sp"
+		    android:padding="10px"
+		    android:layout_marginLeft="5dip"
+		      android:layout_weight="1"
+		     android:background="@color/light_grey"  />
+		<TextView 
+		    android:id="@id/tv43"
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent" 
+			android:text="风险疾病"
+		    android:textSize="15sp"
+            android:padding="10px"
+            android:layout_marginLeft="5dip"
+             android:layout_marginRight="10dip"
+               android:layout_weight="1"
+             android:background="@color/light_grey"  />
+		</TableRow>
+		 <TableRow
+	       android:paddingTop="5dip">
+		<TextView
+		    android:id="@id/tv50"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="检测项" 
+		    android:textSize="15sp"
+		    android:padding="10px"
+		    android:layout_marginLeft="10dip"
+		    android:layout_weight="1"
+		    android:background="@color/light_grey"  
+		    />
+
+		<TextView
+		    android:id="@id/tv51"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="5dip"
+		    android:layout_weight="1.5"
+		    android:background="@color/light_grey"
+		    android:padding="10px"
+		    android:text=" 检测值  "
+		    android:drawableRight="@drawable/wenhao"
+		    android:textSize="15sp" />
+		<TextView
+		    android:id="@id/tv52"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="正常值" 
+		    android:textSize="15sp"
+		    android:padding="10px"
+		    android:layout_marginLeft="5dip"
+		      android:layout_weight="1"
+		     android:background="@color/light_grey"  />
+		<TextView 
+		    android:id="@id/tv53"
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent" 
+			android:text="风险疾病"
+		    android:textSize="15sp"
+            android:padding="10px"
+            android:layout_marginLeft="5dip"
+             android:layout_marginRight="10dip"
+               android:layout_weight="1"
+             android:background="@color/light_grey"  />
+		</TableRow>
+		 <TableRow
+	       android:paddingTop="5dip">
+		<TextView
+		    android:id="@id/tv60"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="检测项" 
+		    android:textSize="15sp"
+		    android:padding="10px"
+		    android:layout_marginLeft="10dip"
+		    android:layout_weight="1"
+		    android:background="@color/light_grey"  
+		    />
+
+		<TextView
+		    android:id="@id/tv61"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="5dip"
+		    android:layout_weight="1.5"
+		    android:background="@color/light_grey"
+		    android:padding="10px"
+		    android:text=" 检测值  "
+		    android:drawableRight="@drawable/wenhao"
+		    android:textSize="15sp" />
+		<TextView
+		    android:id="@id/tv62"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="正常值" 
+		    android:textSize="15sp"
+		    android:padding="10px"
+		    android:layout_marginLeft="5dip"
+		      android:layout_weight="1"
+		     android:background="@color/light_grey"  />
+		<TextView 
+		    android:id="@id/tv63"
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent" 
+			android:text="风险疾病"
+		    android:textSize="15sp"
+            android:padding="10px"
+            android:layout_marginLeft="5dip"
+             android:layout_marginRight="10dip"
+               android:layout_weight="1"
+             android:background="@color/light_grey"  />
+		</TableRow>
+		 <TableRow
+	       android:paddingTop="5dip">
+		<TextView
+		    android:id="@id/tv70"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="检测项" 
+		    android:textSize="15sp"
+		    android:padding="10px"
+		    android:layout_marginLeft="10dip"
+		    android:layout_weight="1"
+		    android:background="@color/light_grey"  
+		    />
+
+		<TextView
+		    android:id="@id/tv71"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="5dip"
+		    android:layout_weight="1.5"
+		    android:background="@color/light_grey"
+		    android:padding="10px"
+		    android:text=" 检测值  "
+		    android:drawableRight="@drawable/wenhao"
+		    android:textSize="15sp" />
+		<TextView
+		    android:id="@id/tv72"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="正常值" 
+		    android:textSize="15sp"
+		    android:padding="10px"
+		    android:layout_marginLeft="5dip"
+		      android:layout_weight="1"
+		     android:background="@color/light_grey"  />
+		<TextView 
+		    android:id="@id/tv73"
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent" 
+			android:text="风险疾病"
+		    android:textSize="15sp"
+            android:padding="10px"
+            android:layout_marginLeft="5dip"
+             android:layout_marginRight="10dip"
+               android:layout_weight="1"
+             android:background="@color/light_grey"  />
+		</TableRow>
+		 <TableRow
+	       android:paddingTop="5dip">
+		<TextView
+		    android:id="@id/tv80"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="检测项" 
+		    android:textSize="15sp"
+		    android:padding="10px"
+		    android:layout_marginLeft="10dip"
+		    android:layout_weight="1"
+		    android:background="@color/light_grey"  
+		    />
+
+		<TextView
+		    android:id="@id/tv81"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="5dip"
+		    android:layout_weight="1.5"
+		    android:background="@color/light_grey"
+		    android:padding="10px"
+		    android:text=" 检测值  "
+		    android:drawableRight="@drawable/wenhao"
+		    android:textSize="15sp" />
+		<TextView
+		    android:id="@id/tv82"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="正常值" 
+		    android:textSize="15sp"
+		    android:padding="10px"
+		    android:layout_marginLeft="5dip"
+		      android:layout_weight="1"
+		     android:background="@color/light_grey"  />
+		<TextView 
+		    android:id="@id/tv83"
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent" 
+			android:text="风险疾病"
+		    android:textSize="15sp"
+            android:padding="10px"
+            android:layout_marginLeft="5dip"
+             android:layout_marginRight="10dip"
+               android:layout_weight="1"
+             android:background="@color/light_grey"  />
+		</TableRow>
+		 <TableRow
+	       android:paddingTop="5dip">
+		<TextView
+		    android:id="@id/tv90"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="检测项" 
+		    android:textSize="15sp"
+		    android:padding="10px"
+		    android:layout_marginLeft="10dip"
+		    android:layout_weight="1"
+		    android:background="@color/light_grey"  
+		    />
+
+		<TextView
+		    android:id="@id/tv91"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="5dip"
+		    android:layout_weight="1.5"
+		    android:background="@color/light_grey"
+		    android:padding="10px"
+		    android:text=" 检测值  "
+		    android:drawableRight="@drawable/wenhao"
+		    android:textSize="15sp" />
+		<TextView
+		    android:id="@id/tv92"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="正常值" 
+		    android:textSize="15sp"
+		    android:padding="10px"
+		    android:layout_marginLeft="5dip"
+		      android:layout_weight="1"
+		     android:background="@color/light_grey"  />
+		<TextView 
+		    android:id="@id/tv93"
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent" 
+			android:text="风险疾病"
+		    android:textSize="15sp"
+            android:padding="10px"
+            android:layout_marginLeft="5dip"
+             android:layout_marginRight="10dip"
+               android:layout_weight="1"
+             android:background="@color/light_grey"  />
+		</TableRow>
+		 <TableRow
+	       android:paddingTop="5dip">
+		<TextView
+		    android:id="@id/tv100"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="检测项" 
+		    android:textSize="15sp"
+		    android:padding="10px"
+		    android:layout_marginLeft="10dip"
+		    android:layout_weight="1"
+		    android:background="@color/light_grey"  
+		    />
+
+		<TextView
+		    android:id="@id/tv101"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="5dip"
+		    android:layout_weight="1.5"
+		    android:background="@color/light_grey"
+		    android:padding="10px"
+		    android:text=" 检测值  "
+		    android:drawableRight="@drawable/wenhao"
+		    android:textSize="15sp" />
+		<TextView
+		    android:id="@id/tv102"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="正常值" 
+		    android:textSize="15sp"
+		    android:padding="10px"
+		    android:layout_marginLeft="5dip"
+		      android:layout_weight="1"
+		     android:background="@color/light_grey"  />
+		<TextView 
+		    android:id="@id/tv103"
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent" 
+			android:text="风险疾病"
+		    android:textSize="15sp"
+            android:padding="10px"
+            android:layout_marginLeft="5dip"
+             android:layout_marginRight="10dip"
+               android:layout_weight="1"
+             android:background="@color/light_grey"  />
+		</TableRow>
+		 <TableRow
+	       android:paddingTop="5dip">
+		<TextView
+		    android:id="@id/tv110"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="检测项" 
+		    android:textSize="15sp"
+		    android:padding="10px"
+		    android:layout_marginLeft="10dip"
+		    android:layout_weight="1"
+		    android:background="@color/light_grey"  
+		    />
+
+		<TextView
+		    android:id="@id/tv111"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="5dip"
+		    android:layout_weight="1.5"
+		    android:background="@color/light_grey"
+		    android:padding="10px"
+		    android:text=" 检测值  "
+		    android:drawableRight="@drawable/wenhao"
+		    android:textSize="15sp" />
+		<TextView
+		    android:id="@id/tv112"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="正常值" 
+		    android:textSize="15sp"
+		    android:padding="10px"
+		    android:layout_marginLeft="5dip"
+		      android:layout_weight="1"
+		     android:background="@color/light_grey"  />
+		<TextView 
+		    android:id="@id/tv113"
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent" 
+			android:text="风险疾病"
+		    android:textSize="15sp"
+            android:padding="10px"
+            android:layout_marginLeft="5dip"
+             android:layout_marginRight="10dip"
+               android:layout_weight="1"
+             android:background="@color/light_grey"  />
+		</TableRow>
+	
+	</TableLayout>
+	
+
+    
+
+        
+   
+   
+</LinearLayout>
+ </ScrollView>

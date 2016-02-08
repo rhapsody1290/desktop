@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <LinearLayout 
+          style = "@style/FillParent" 
+           android:orientation="vertical"> 
+     <com.aibeile_diaper.mm.view.MyHeaderView 
+        style = "@style/FillParentWrapContent"/>    
+      
+       <FrameLayout
+          
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_centerVertical="true" 
+          android:layout_marginTop="10dip">
+
+          <FrameLayout
+              style="@style/WrapContent"
+              android:layout_gravity="center" >
+
+              <com.aibeile_diaper.mm.view.CircularImage
+                  android:id="@id/avatar"
+                  style="@style/WrapContent"
+                  android:scaleType="centerCrop"
+                  android:src="@drawable/avatar" />
+          </FrameLayout>
+
+          <ImageView
+              android:id="@id/avatar_vip"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="bottom|right"
+              android:src="@drawable/avatar_vip"
+              android:visibility="visible" />
+      </FrameLayout>
+         
+         
+       <TextView 
+          android:id="@id/personal_id"
+          style="@style/WrapContent"
+          android:text="用户id"
+          android:textColor="@color/blue"
+          android:layout_gravity="center"
+          android:layout_marginTop="5dip" 
+          />
+        <TextView 
+          android:id="@id/personal_sex"
+          style="@style/WrapContent"
+          android:text="女"
+          android:textColor="@color/blue"
+          android:layout_gravity="center"
+          android:layout_marginTop="5dip" 
+          />
+         <TextView 
+          android:id="@id/personal_birthday"
+          style="@style/WrapContent"
+          android:text="2015年12月07日"
+          android:textColor="@color/blue"
+          android:layout_gravity="center"
+          android:layout_marginTop="5dip" 
+          />
+      <TextView 
+          android:id="@id/personal_score"
+          style="@style/WrapContent"
+          android:text="当前积分：100"
+          android:textColor="@color/blue"
+          android:layout_gravity="center"
+          android:layout_marginTop="5dip"
+          /> 
+            
+       <RelativeLayout 
+           android:layout_marginTop="20dip"
+           style = "@style/LineHorizontalBar2">
+       </RelativeLayout>
+       <RelativeLayout 
+           
+           android:layout_width="match_parent"
+           android:layout_height="50dip"
+           android:id="@id/personal_data"
+           android:layout_gravity="center_vertical">
+           <ImageView
+               style ="@style/WrapContent"
+               android:background="@drawable/personal_data_pic"
+               android:layout_marginLeft="15dip"
+               android:layout_centerVertical="true"
+               />
+           <TextView 
+               android:text="历史数据"
+               style = "@style/personal_tv"
+               android:layout_marginLeft="70dip"
+               android:layout_centerVertical="true"
+               />
+           <ImageView 
+               style = "@style/WrapContent"
+               android:background="@drawable/red_dot"
+               android:layout_centerVertical="true"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="15dip"
+               android:visibility="visible"
+               />
+           
+        </RelativeLayout>
+        <LinearLayout 
+          style = "@style/LineHorizontalBar">
+        </LinearLayout>
+        
+        
+        <RelativeLayout 
+           
+           android:layout_width="match_parent"
+           android:layout_height="50dip"
+           android:id="@id/personal_notice"
+           android:layout_gravity="center_vertical">
+           <ImageView
+               style ="@style/WrapContent"
+               android:background="@drawable/personal_setting_pic"
+               android:layout_marginLeft="15dip"
+               android:layout_centerVertical="true"
+               />
+           <TextView 
+               android:text="下次检测提醒"
+               style = "@style/personal_tv"
+               android:layout_marginLeft="70dip"
+               android:layout_centerVertical="true"
+               />
+           <ImageView 
+               style = "@style/WrapContent"
+               android:background="@drawable/red_dot"
+               android:layout_centerVertical="true"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="15dip"
+               android:visibility="visible"
+               />
+           
+        </RelativeLayout>
+           <LinearLayout 
+          style = "@style/LineHorizontalBar">
+        </LinearLayout>
+        
+        
+        
+        <RelativeLayout 
+           
+           android:layout_width="match_parent"
+           android:layout_height="50dip"
+           android:id="@id/personal_information"
+           android:layout_gravity="center_vertical">
+           <ImageView
+               style ="@style/WrapContent"
+               android:background="@drawable/personal_help_pic"
+               android:layout_marginLeft="15dip"
+               android:layout_centerVertical="true"
+               />
+           <TextView 
+               android:text="我的详细信息"
+               style = "@style/personal_tv"
+               android:layout_marginLeft="70dip"
+               android:layout_centerVertical="true"
+               />
+           <ImageView 
+               style = "@style/WrapContent"
+               android:background="@drawable/red_dot"
+               android:layout_centerVertical="true"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="15dip"
+               android:visibility="visible"
+               />
+           
+        </RelativeLayout>
+        <LinearLayout 
+          style = "@style/LineHorizontalBar">
+        </LinearLayout>
+        
+        
+        
+        <RelativeLayout 
+           
+           android:layout_width="match_parent"
+           android:layout_height="50dip"
+           android:id="@id/personal_help"
+           android:layout_gravity="center_vertical">
+           <ImageView
+               style ="@style/WrapContent"
+               android:background="@drawable/personal_help_pic"
+               android:layout_marginLeft="15dip"
+               android:layout_centerVertical="true"
+               />
+           <TextView 
+               android:text="帮助"
+               style = "@style/personal_tv"
+               android:layout_marginLeft="70dip"
+               android:layout_centerVertical="true"
+               />
+           <ImageView 
+               style = "@style/WrapContent"
+               android:background="@drawable/red_dot"
+               android:layout_centerVertical="true"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="15dip"
+               android:visibility="visible"
+               />
+           
+        </RelativeLayout>
+        <LinearLayout 
+          style = "@style/LineHorizontalBar">
+        </LinearLayout>
+	
+        
+        
+        <RelativeLayout 
+           
+           android:layout_width="match_parent"
+           android:layout_height="50dip"
+           android:id="@id/personal_about"
+           android:layout_gravity="center_vertical">
+           <ImageView
+               style ="@style/WrapContent"
+               android:background="@drawable/personal_about_pic"
+               android:layout_marginLeft="15dip"
+               android:layout_centerVertical="true"
+               />
+           <TextView 
+               android:text="关于"
+               style = "@style/personal_tv"
+               android:layout_marginLeft="70dip"
+               android:layout_centerVertical="true"
+               />
+           <ImageView 
+               style = "@style/WrapContent"
+               android:background="@drawable/red_dot"
+               android:layout_centerVertical="true"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="15dip"
+               android:visibility="visible"
+               />
+           
+        </RelativeLayout>
+        <LinearLayout 
+          style = "@style/LineHorizontalBar">
+        </LinearLayout>
+        
+        
+        <RelativeLayout 
+           
+           android:layout_width="match_parent"
+           android:layout_height="50dip"
+           android:id="@id/personal_feedback"
+           android:layout_gravity="center_vertical">
+           <ImageView
+               style ="@style/WrapContent"
+               android:background="@drawable/personal_feedback_pic"
+               android:layout_marginLeft="15dip"
+               android:layout_centerVertical="true"
+               />
+           <TextView 
+               android:text="反馈"
+               style = "@style/personal_tv"
+               android:layout_marginLeft="70dip"
+               android:layout_centerVertical="true"
+               />
+           <ImageView 
+               style = "@style/WrapContent"
+               android:background="@drawable/red_dot"
+               android:layout_centerVertical="true"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="15dip"
+               android:visibility="visible"
+               />
+           
+        </RelativeLayout>
+        <LinearLayout 
+          style = "@style/LineHorizontalBar">
+        </LinearLayout>
+        <ImageButton 
+             android:id="@+id/qiehuanzhanghao" 
+             android:layout_width="wrap_content" 
+             android:layout_height="wrap_content" 
+              android:layout_marginTop="25dip" 
+                android:layout_gravity="center"
+               android:layout_centerVertical="true" 
+             android:src="@drawable/qiehuanzhanghao" 
+      /> 
+        
+</LinearLayout>
+</ScrollView>

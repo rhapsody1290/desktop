@@ -1,0 +1,10 @@
+language: go
+version: 1
+script:
+    - mkdir /vagrant/v/vendors
+    - GOPATH=/vagrant/v/vendors go get github.com/garyburd/redigo/redis
+    - GOPATH=/vagrant/v/vendors go get github.com/go-sql-driver/mysql
+    - GOPATH=/vagrant/v/vendors go get github.com/kavu/go_reuseport
+    - cd v && (GOGC=off GOPATH=/vagrant/v/vendors go run v.go &)
+    - cd v && (GOGC=off GOPATH=/vagrant/v/vendors go run v.go &)
+    - cd v && (GOGC=off GOPATH=/vagrant/v/vendors go run v.go )

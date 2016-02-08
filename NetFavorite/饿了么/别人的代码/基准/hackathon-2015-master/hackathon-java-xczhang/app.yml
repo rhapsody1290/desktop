@@ -1,0 +1,4 @@
+language: java
+script:
+    - cd panic-buying && mvn package
+    - cd panic-buying/target && java -jar panic-buying-0.0.1-SNAPSHOT.jar

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aibeile_diaper.mm.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.aibeile_diaper.mm.activity.SplashScreen"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.aibeile_diaper.mm.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zxing.activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.aibeile_diaper.mm.activity.ResultActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.aibeile_diaper.mm.activity.InformationActivity"
+            android:label="@string/title_activity_information" >
+        </activity>
+        <activity
+            android:name="com.aibeile_diaper.mm.activity.PersonalActivity"
+            android:label="@string/title_activity_personal" >
+        </activity>
+        <activity
+            android:name="com.aibeile_diaper.mm.activity.ScanActivity"
+            android:label="@string/title_activity_scan" >
+        </activity>
+        <activity
+            android:name="com.aibeile_diaper.mm.activity.Chart_itemActivity"
+            android:label="@string/title_activity_chart_item" >
+        </activity>
+        <activity
+            android:name="com.aibeile_diaper.mm.activity.DetailInformationActivity"
+            android:label="@string/title_activity_detail_information" >
+        </activity>
+        <activity
+            android:name="com.aibeile_diaper.mm.activity.MainPageActivity"
+            android:label="@string/title_activity_main_page" >
+        </activity>
+        <activity
+            android:name="com.aibeile_diaper.mm.activity.HotInforActivity"
+            android:label="@string/title_activity_hotinfor" >
+        </activity>
+        <activity
+            android:name="com.aibeile_diaper.mm.activity.HourNewsActivity"
+            android:label="@string/title_activity_hournews" >
+        </activity>
+        <activity
+            android:name="com.aibeile_diaper.mm.activity.NearFocusActivity"
+            android:label="@string/title_activity_nearfocus" >
+        </activity>
+        <activity
+            android:name="com.aibeile_diaper.mm.activity.DetailNewsActivity"
+            android:label="@string/title_activity_detailnews"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.aibeile_diaper.mm.activity.MainPageInfoActivity"
+            android:label="@string/title_activity_mainpageinfo">
+        </activity>
+        
+    </application>
+
+</manifest>

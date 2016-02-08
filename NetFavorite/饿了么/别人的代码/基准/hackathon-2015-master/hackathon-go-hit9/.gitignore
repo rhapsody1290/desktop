@@ -1,0 +1,10 @@
+*.pyc
+*.sw[pon]
+v/vendors/bin
+v/vendors/pkg
+.cache
+.vagrant
+app.log
+benchmark/benchmark
+tests/.cache/
+v/v

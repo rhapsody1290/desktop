@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/FillParent"
+        android:orientation="vertical" >
+
+        <com.aibeile_diaper.mm.view.MyHeaderView style="@style/FillParentWrapContent" >
+        </com.aibeile_diaper.mm.view.MyHeaderView>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/info_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+</ScrollView>

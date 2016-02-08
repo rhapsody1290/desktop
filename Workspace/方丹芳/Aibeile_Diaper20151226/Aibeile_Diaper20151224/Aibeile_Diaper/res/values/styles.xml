@@ -1,0 +1,93 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+      <style name="personal_tv" parent = "WrapContent"> 
+        
+        <item name = "android:textColor">#454545</item>
+        <item name = "android:textSize">20sp</item>
+        
+
+        <item name = "android:gravity">center_horizontal</item>
+    </style>
+    
+      <style name="detail_tv" parent = "WrapContent"> 
+        
+        <item name = "android:textColor">#CCCCCC</item>
+        <item name = "android:textSize">20sp</item>
+        
+
+        <item name = "android:gravity">center_horizontal</item>
+    </style>
+      
+      
+    
+     <style name = "FillParent">
+        <item name = "android:layout_width">fill_parent</item>
+        <item name = "android:layout_height">fill_parent</item>
+    </style>
+    
+    <style name = "WrapContent">
+        <item name = "android:layout_width">wrap_content </item>
+        <item name = "android:layout_height">wrap_content</item>
+    </style>
+ 
+     <style name = "FillParentWrapContent">
+        <item name = "android:layout_width">fill_parent</item>
+        <item name = "android:layout_height">wrap_content</item>
+    </style>       
+        
+     <style name = "WrapContentFillParent">
+        <item name = "android:layout_width">wrap_content</item>
+        <item name = "android:layout_height">fill_parent</item>
+    </style>  
+      <style name = "LineHorizontalBar">
+        <item name = "android:layout_width">fill_parent</item>
+        <item name = "android:layout_height">1px</item>
+        <item name = "android:background">#d0d0d0</item>
+    </style>  
+     <style name = "LineHorizontalBar2">
+        <item name = "android:layout_width">fill_parent</item>
+        <item name = "android:layout_height">10dp</item>
+        <item name = "android:background">#e7e7e7</item>
+    </style>  
+     
+      <style name="main_tab">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:button">@null</item>
+<!--         <item name="android:singleLine">true</item> -->
+        <item name="android:textColor">@color/tab_gray</item>
+    </style>
+    
+    <style name="scorll_header_tv_style" parent = "FillParentWrapContent"> 
+        
+        <item name = "android:textColor">@color/text_grey</item>
+        <item name = "android:orientation">vertical</item>
+        <item name = "android:background">@color/background_grey</item>
+        <item name = "android:paddingTop">15dip</item>
+        <item name = "android:paddingBottom">15dip</item>
+        <item name = "android:gravity">center_horizontal</item>
+    </style>
+    
+
+</resources>

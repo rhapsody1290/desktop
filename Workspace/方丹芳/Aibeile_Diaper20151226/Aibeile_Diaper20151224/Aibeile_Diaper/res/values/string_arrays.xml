@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 
+    
+    <string-array name="news_header_strings">
+        <item >热门资讯</item>
+        <item >医学科普</item>
+        <item >健康养生</item>
+    </string-array>
+    
+
+    
+</resources>

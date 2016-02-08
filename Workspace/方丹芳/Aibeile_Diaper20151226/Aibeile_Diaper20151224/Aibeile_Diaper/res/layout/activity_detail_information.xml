@@ -1,0 +1,340 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="#ffffff">
+
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+     <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dp" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:text="个人详细信息"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@id/header_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/back" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26dp"
+            android:layout_toRightOf="@id/header_back_button"
+            android:background="@drawable/company_logo" />
+
+    </RelativeLayout>
+     <RelativeLayout 
+           android:layout_marginTop="20dip"
+           style = "@style/LineHorizontalBar2">
+       </RelativeLayout>
+       <RelativeLayout  
+           android:layout_width="match_parent"
+           android:layout_height="100dip"
+           android:id="@id/detail_head"
+           android:layout_gravity="center_vertical">
+           <TextView 
+               android:text="头像"
+               style = "@style/personal_tv"
+               android:layout_marginLeft="15dip"
+               android:layout_centerVertical="true"
+               />
+           <ImageView 
+               android:id="@id/detail_head_image"
+              android:src="@drawable/company_logo"  
+               android:layout_width="100dip"
+                android:layout_height="100dip"
+              android:scaleType="centerInside"  
+              android:layout_centerVertical="true"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="15dip"
+              
+               />       
+        </RelativeLayout>
+        <LinearLayout 
+          style = "@style/LineHorizontalBar">
+        </LinearLayout>
+              <RelativeLayout  
+           android:layout_width="match_parent"
+           android:layout_height="50dip"
+           android:id="@id/detail_id"
+           android:layout_gravity="center_vertical">
+           <TextView 
+               android:text="id号"
+               style = "@style/personal_tv"
+               android:layout_marginLeft="15dip"
+               android:layout_centerVertical="true"
+               />
+           <TextView 
+               android:id="@id/detail_id_textview"
+               android:text="20151111"
+               style = "@style/detail_tv"
+                android:layout_alignParentRight="true"
+               android:layout_marginRight="15dip"
+               android:layout_centerVertical="true"
+               />     
+        </RelativeLayout>
+        <LinearLayout 
+          style = "@style/LineHorizontalBar">
+        </LinearLayout>
+        <RelativeLayout  
+           android:layout_width="match_parent"
+           android:layout_height="50dip"
+           android:id="@id/detail_sex"
+           android:layout_gravity="center_vertical">
+           <TextView 
+               android:text="性别"
+               style = "@style/personal_tv"
+               android:layout_marginLeft="15dip"
+               android:layout_centerVertical="true"
+               />
+           <TextView 
+               android:id="@id/detail_sex_textview"
+               android:text="女"
+               style = "@style/detail_tv"
+                android:layout_alignParentRight="true"
+               android:layout_marginRight="15dip"
+               android:layout_centerVertical="true"
+               />     
+        </RelativeLayout>
+        <LinearLayout 
+          style = "@style/LineHorizontalBar">
+        </LinearLayout>
+                <RelativeLayout  
+           android:layout_width="match_parent"
+           android:layout_height="50dip"
+           android:id="@id/detail_birthday"
+           android:layout_gravity="center_vertical">
+           <TextView 
+               android:text="出生日期"
+               style = "@style/personal_tv"
+               android:layout_marginLeft="15dip"
+               android:layout_centerVertical="true"
+               />
+           <TextView 
+               android:id="@id/detail_birthday_textview"
+               android:text="2015.10"
+               style = "@style/detail_tv"
+                android:layout_alignParentRight="true"
+               android:layout_marginRight="15dip"
+               android:layout_centerVertical="true"
+               />     
+        </RelativeLayout>
+        <LinearLayout 
+          style = "@style/LineHorizontalBar">
+        </LinearLayout>
+                <RelativeLayout  
+           android:layout_width="match_parent"
+           android:layout_height="50dip"
+           android:id="@id/detail_name"
+           android:layout_gravity="center_vertical">
+           <TextView 
+               android:text="姓名"
+               style = "@style/personal_tv"
+               android:layout_marginLeft="15dip"
+               android:layout_centerVertical="true"
+               />
+           <TextView 
+               android:id="@id/detail_name_textview"
+               android:text="房子"
+               style = "@style/detail_tv"
+                android:layout_alignParentRight="true"
+               android:layout_marginRight="15dip"
+               android:layout_centerVertical="true"
+               />     
+        </RelativeLayout>
+        <LinearLayout 
+          style = "@style/LineHorizontalBar">
+        </LinearLayout>
+                <RelativeLayout  
+           android:layout_width="match_parent"
+           android:layout_height="50dip"
+           android:id="@id/detail_registerdate"
+           android:layout_gravity="center_vertical">
+           <TextView 
+               android:text="注册日期"
+               style = "@style/personal_tv"
+               android:layout_marginLeft="15dip"
+               android:layout_centerVertical="true"
+               />
+           <TextView 
+               android:id="@id/detail_registerdate_textview"
+               android:text="2015.11.4"
+               style = "@style/detail_tv"
+                android:layout_alignParentRight="true"
+               android:layout_marginRight="15dip"
+               android:layout_centerVertical="true"
+               />     
+        </RelativeLayout>
+        <LinearLayout 
+          style = "@style/LineHorizontalBar">
+        </LinearLayout>
+                <RelativeLayout  
+           android:layout_width="match_parent"
+           android:layout_height="50dip"
+           android:id="@id/detail_telephone"
+           android:layout_gravity="center_vertical">
+           <TextView 
+               android:text="手机号"
+               style = "@style/personal_tv"
+               android:layout_marginLeft="15dip"
+               android:layout_centerVertical="true"
+               />
+           <TextView 
+               android:id="@id/detail_telephone_textview"
+               android:text="15117928820"
+               style = "@style/detail_tv"
+                android:layout_alignParentRight="true"
+               android:layout_marginRight="15dip"
+               android:layout_centerVertical="true"
+               />     
+        </RelativeLayout>
+        <LinearLayout 
+          style = "@style/LineHorizontalBar">
+        </LinearLayout>
+                <RelativeLayout  
+           android:layout_width="match_parent"
+           android:layout_height="50dip"
+           android:id="@id/detail_email"
+           android:layout_gravity="center_vertical">
+           <TextView 
+               android:text="邮箱"
+               style = "@style/personal_tv"
+               android:layout_marginLeft="15dip"
+               android:layout_centerVertical="true"
+               />
+           <TextView 
+               android:id="@id/detail_email_textview"
+               android:text="XXX@qq.com"
+               style = "@style/detail_tv"
+                android:layout_alignParentRight="true"
+               android:layout_marginRight="15dip"
+               android:layout_centerVertical="true"
+               />     
+        </RelativeLayout>
+        <LinearLayout 
+          style = "@style/LineHorizontalBar">
+        </LinearLayout>
+                <RelativeLayout  
+           android:layout_width="match_parent"
+           android:layout_height="50dip"
+           android:id="@id/detail_address"
+           android:layout_gravity="center_vertical">
+           <TextView 
+               android:text="居住地"
+               style = "@style/personal_tv"
+               android:layout_marginLeft="15dip"
+               android:layout_centerVertical="true"
+               />
+           <TextView 
+               android:id="@id/detail_address_textview"
+               android:text="北京市海淀区"
+               style = "@style/detail_tv"
+                android:layout_alignParentRight="true"
+               android:layout_marginRight="15dip"
+               android:layout_centerVertical="true"
+               />     
+        </RelativeLayout>
+        <LinearLayout 
+          style = "@style/LineHorizontalBar">
+        </LinearLayout>
+                <RelativeLayout  
+           android:layout_width="match_parent"
+           android:layout_height="50dip"
+           android:id="@id/detail_qinqingzhanghao"
+           android:layout_gravity="center_vertical">
+           <TextView 
+               android:text="亲情账号"
+               style = "@style/personal_tv"
+               android:layout_marginLeft="15dip"
+               android:layout_centerVertical="true"
+               />
+           <TextView 
+               android:id="@id/detail_qinqingzhanghao_textview"
+               android:text="1145213"
+               style = "@style/detail_tv"
+                android:layout_alignParentRight="true"
+               android:layout_marginRight="15dip"
+               android:layout_centerVertical="true"
+               />     
+        </RelativeLayout>
+        <LinearLayout 
+          style = "@style/LineHorizontalBar">
+        </LinearLayout>
+                <RelativeLayout  
+           android:layout_width="match_parent"
+           android:layout_height="50dip"
+           android:id="@id/detail_qinqingpassword"
+           android:layout_gravity="center_vertical">
+           <TextView 
+               android:text="亲情账号密码"
+               style = "@style/personal_tv"
+               android:layout_marginLeft="15dip"
+               android:layout_centerVertical="true"
+               />
+           <TextView 
+               android:id="@id/detail_qinqingpassword_textview"
+               android:text="12345"
+               style = "@style/detail_tv"
+                android:layout_alignParentRight="true"
+               android:layout_marginRight="15dip"
+               android:layout_centerVertical="true"
+               />     
+        </RelativeLayout>
+        <LinearLayout 
+          style = "@style/LineHorizontalBar">
+        </LinearLayout>
+                <RelativeLayout  
+           android:layout_width="match_parent"
+           android:layout_height="50dip"
+           android:id="@id/detail_doctorrecord"
+           android:layout_gravity="center_vertical">
+           <TextView 
+               android:text="就医记录"
+               style = "@style/personal_tv"
+               android:layout_marginLeft="15dip"
+               android:layout_centerVertical="true"
+               />
+        </RelativeLayout>
+        <LinearLayout 
+          style = "@style/LineHorizontalBar">
+        </LinearLayout>
+        <RelativeLayout  
+           android:layout_width="match_parent"
+           android:layout_height="50dip"
+           android:id="@id/detail_disease"
+           android:layout_gravity="center_vertical">
+           <TextView 
+               android:text="个人疾病史"
+               style = "@style/personal_tv"
+               android:layout_marginLeft="15dip"
+               android:layout_centerVertical="true"
+               />
+        </RelativeLayout>
+        <LinearLayout 
+          style = "@style/LineHorizontalBar">
+        </LinearLayout>
+        
+</LinearLayout>
+ </ScrollView>

@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <!-- 网页的标题，显示在浏览器的左上方-->
+    <title>Plant</title>
+    <!--利用css对网页的body进行样式设置，链接到同目录下的index.css-->
+    <link type="text/css" rel="stylesheet" href="index.css" />  
+  </head>
+  <body>
+	<!-- 标题1 -->
+	<h1>Plant</h1>
+	<!-- 设置标题下的两个按钮:若浏览器的cookie有用户信息，则显示用户，并提供退出选择-->
+	<a href="personcenter.php"><?php if(isset($_COOKIE['user'])){
+	echo $_COOKIE['user'];}?></a>
+	<!-- 空格  -->
+	&nbsp;&nbsp;&nbsp;
+	<a href="logout.php"><?php if(isset($_COOKIE['user'])){echo "退出";}?></a>
+	<!-- 若浏览器的cookie没有用户信息，则提供登录、注册选择，并链接到对应脚本取执行 -->
+	<a href="log.php"><?php if(!isset($_COOKIE['user'])){echo "登录";}?></a>
+	&nbsp;&nbsp;&nbsp;
+	<a href="reg.php"><?php if(!isset($_COOKIE['user'])){echo "注册";}?></a> 
+	<!--用段落（块元素）显示图片（内敛元素），可自动换行-->	
+	<p>
+	  <!--若图片plant.jpg不能正常显示，则替换为对应文本 -->
+	  <img src="plant.jpg" alt="plant">
+	</p>
+	<p>
+	  <img src="white.jpg" alt="white">
+	  <img src="pink.jpg" alt="pink">	
+	</p>		
+  </body>
+</html>

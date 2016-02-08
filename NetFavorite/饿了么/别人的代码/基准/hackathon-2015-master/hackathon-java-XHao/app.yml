@@ -1,0 +1,6 @@
+language: java
+script:
+  - pip install redis
+  - python ./draenor/sql/utils.py
+  - mvn -T 2C clean package -Dmaven.test.skip=true -f ./draenor/pom.xml
+  - java -server -Xms3550m -Xmx3550m -Xmn2g -XX:ParallelGCThreads=20 -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -jar ./draenor/target/draenor.jar 

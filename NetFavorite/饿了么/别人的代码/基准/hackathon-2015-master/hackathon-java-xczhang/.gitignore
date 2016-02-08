@@ -1,0 +1,25 @@
+.vagrant
+.idea
+*.iml
+*.log
+
+# python
+.cache
+*.pyc
+*.egg-info
+dist
+__pycache__
+
+# java
+.classpath
+target/
+.settings/
+logs/
+dump.rdb
+
+# packer
+packer_cache
+output-*
+
+# vim
+.*.sw[opn]

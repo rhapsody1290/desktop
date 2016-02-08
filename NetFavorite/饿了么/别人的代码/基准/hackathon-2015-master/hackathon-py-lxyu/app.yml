@@ -1,0 +1,6 @@
+language: py3
+script:
+  - pip install -r requirements.txt
+  - python pre-warm.py
+  - gunicorn -b :8080 --workers=8 --worker-class="egg:meinheld#gunicorn_worker" hackathon.app:app
+

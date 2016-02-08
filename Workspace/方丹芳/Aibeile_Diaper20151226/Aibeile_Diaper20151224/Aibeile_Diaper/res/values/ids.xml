@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item  type = "id" name = "tabs">false</item>
+    <item  type = "id" name = "header_searchLayout">false</item>
+    <item  type = "id" name = "header_search_button">false</item>
+    <item  type = "id" name = "header_back_button">false</item>
+    <item  type = "id" name = "main_tab_RadioGroup">false</item>
+     <item  type = "id" name = "main_tab_main">false</item>
+    <item  type = "id" name = "main_tab_information">false</item>
+    <item  type = "id" name = "main_tab_scan">false</item>
+    <item  type = "id" name = "main_tab_personal">false</item>
+    <item  type = "id" name = "result_scan_back">false</item>
+    <item  type = "id" name = "chart_item_zhibiao">false</item>
+     <item  type = "id" name = "chart_item_num">false</item>
+      <item  type = "id" name = "chart_item_chartview">false</item>
+       <item  type = "id" name = "chart_item_miaoshu">false</item> 
+     <item  type = "id" name = "avatar">false</item> 
+     <item  type = "id" name = "avatar_vip">false</item> 
+       <item  type = "id" name = "personal_id">false</item> 
+         <item  type = "id" name = "personal_sex">false</item> 
+           <item  type = "id" name = "personal_birthday">false</item> 
+   
+     <item  type = "id" name = "personal_score">false</item> 
+      <item  type = "id" name = "personal_data">false</item> 
+      <item  type = "id" name = "personal_notice">false</item> 
+          <item  type = "id" name = "personal_information">false</item> 
+     <item  type = "id" name = "personal_help">false</item> 
+      <item  type = "id" name = "personal_about">false</item> 
+           <item  type = "id" name = "personal_feedback">false</item> 
+      
+        <item  type = "id" name = "detail_head">false</item> 
+        <item  type = "id" name = "detail_id">false</item> 
+        <item  type = "id" name = "detail_sex">false</item> 
+        <item  type = "id" name = "detail_birthday">false</item> 
+        <item  type = "id" name = "detail_name">false</item> 
+        <item  type = "id" name = "detail_registerdate">false</item> 
+        <item  type = "id" name = "detail_telephone">false</item> 
+        <item  type = "id" name = "detail_email">false</item> 
+        <item  type = "id" name = "detail_address">false</item> 
+        <item  type = "id" name = "detail_qinqingzhanghao">false</item> 
+        <item  type = "id" name = "detail_qinqingpassword">false</item> 
+        <item  type = "id" name = "detail_doctorrecord">false</item> 
+        <item  type = "id" name = "detail_disease">false</item>
+         <item  type = "id" name = "detail_head_image">false</item> 
+        <item  type = "id" name = "detail_id_textview">false</item> 
+        <item  type = "id" name = "detail_sex_textview">false</item> 
+        <item  type = "id" name = "detail_birthday_textview">false</item> 
+        <item  type = "id" name = "detail_name_textview">false</item> 
+        <item  type = "id" name = "detail_registerdate_textview">false</item> 
+        <item  type = "id" name = "detail_telephone_textview">false</item> 
+        <item  type = "id" name = "detail_email_textview">false</item> 
+        <item  type = "id" name = "detail_address_textview">false</item> 
+        <item  type = "id" name = "detail_qinqingzhanghao_textview">false</item> 
+        <item  type = "id" name = "detail_qinqingpassword_textview">false</item> 
+        
+      
+      
+     
+   
+      
+    
+    
+    <!--tablelayout IDs -->
+  <item type="id" name="tv00"/>
+  <item type="id" name="tv01"/>
+  <item type="id" name="tv02"/>
+  <item type="id" name="tv03"/>
+  <item type="id" name="tv10"/>
+  <item type="id" name="tv11"/>
+  <item type="id" name="tv12"/>
+  <item type="id" name="tv13"/>
+  <item type="id" name="tv20"/>
+  <item type="id" name="tv21"/>
+  <item type="id" name="tv22"/>
+  <item type="id" name="tv23"/>
+  <item type="id" name="tv30"/>
+  <item type="id" name="tv31"/>
+  <item type="id" name="tv32"/>
+  <item type="id" name="tv33"/>
+   <item type="id" name="tv40"/>
+  <item type="id" name="tv41"/>
+  <item type="id" name="tv42"/>
+  <item type="id" name="tv43"/>
+   <item type="id" name="tv50"/>
+  <item type="id" name="tv51"/>
+  <item type="id" name="tv52"/>
+  <item type="id" name="tv53"/>
+   <item type="id" name="tv60"/>
+  <item type="id" name="tv61"/>
+  <item type="id" name="tv62"/>
+  <item type="id" name="tv63"/>
+   <item type="id" name="tv70"/>
+  <item type="id" name="tv71"/>
+  <item type="id" name="tv72"/>
+  <item type="id" name="tv73"/>
+   <item type="id" name="tv80"/>
+  <item type="id" name="tv81"/>
+  <item type="id" name="tv82"/>
+  <item type="id" name="tv83"/>
+   <item type="id" name="tv90"/>
+  <item type="id" name="tv91"/>
+  <item type="id" name="tv92"/>
+  <item type="id" name="tv93"/>
+   <item type="id" name="tv100"/>
+  <item type="id" name="tv101"/>
+  <item type="id" name="tv102"/>
+  <item type="id" name="tv103"/>
+   <item type="id" name="tv110"/>
+  <item type="id" name="tv111"/>
+  <item type="id" name="tv112"/>
+  <item type="id" name="tv113"/>
+  
+
+  
+  
+    
+    
+  <!--zxing  Messages IDs -->
+  <item type="id" name="auto_focus"/>
+  <item type="id" name="decode"/>
+  <item type="id" name="decode_failed"/>
+  <item type="id" name="decode_succeeded"/>
+  <item type="id" name="encode_failed"/>
+  <item type="id" name="encode_succeeded"/>
+  <item type="id" name="launch_product_query"/>
+  <item type="id" name="quit"/>
+  <item type="id" name="restart_preview"/>
+  <item type="id" name="return_scan_result"/>
+  <item type="id" name="search_book_contents_failed"/>
+  <item type="id" name="search_book_contents_succeeded"/>
+  
+  
+  <!--Information IDs -->
+  <item  type = "id" name = "information_scroll_header">false</item>
+  <item  type = "id" name = "fragment_viewpager">false</item>  
+  <item  type = "id" name = "scroll_header_scroller">false</item>
+  <item  type = "id" name = "scroll_header_container">false</item>  
+  <item  type = "id" name = "scroll_header_tv">false</item>  
+  
+  
+  
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/scroll_header_tv"
+    style = "@style/scorll_header_tv_style"
+    android:text="访问学者" 
+>
+    
+    
+
+</TextView>
